@@ -116,9 +116,20 @@ body{
 .swiper-button-prev{
     width: 7.8%;
     left: 3.33%;
+    
 
 }
+.swiper-button-prev:focus {
+    outline: none;
+    box-shadow: none;
+  }
 
+
+  .swiper-button-next:focus {
+    outline: none;
+    box-shadow: none;
+  }
+ 
 .swiper-button-next{
     width: 7.8%;
     right: 3.33%;
