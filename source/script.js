@@ -67,6 +67,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     .then(response=>(modalText.innerHTML = arr[0][0].desc))
     .catch(err => {slider.innerHTML+=`<div class="swiper-slide"><div class="bg-error"><p>ERROR</p></div></div>`
                     headerP.innerHTML="////////";
+                    slider1.innerHTML+=`<div class="swiper-slide">00</div>`
                     })
 
    
