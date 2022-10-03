@@ -1,15 +1,16 @@
 {
   "dependencies": {
     "axios": "^0.27.2",
+    "gh-pages": "^4.0.0",
     "sass": "^1.55.0",
     "swiper": "^8.4.2"
   },
   "name": "bmw",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
+  "homepage": "https://teplovslava.github.io/BMW",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy":""
   },
   "keywords": [],
   "author": "",
