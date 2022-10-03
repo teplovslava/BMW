@@ -10,7 +10,7 @@
   "main": "index.js",
   "homepage": "https://teplovslava.github.io/BMW",
   "scripts": {
-    "deploy":""
+    "deploy":"gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
