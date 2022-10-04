@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     .then(response=>arr.push(response.data))
     .then(response=>{
      arr[0].map(item=>{
-    slider.innerHTML+=`<div class="swiper-slide"><img src=${item.imgUrl} alt=''/></div>`;})})
+    slider.innerHTML+=`<div class="swiper-slide"><img  src=${item.imgUrl} alt=''/></div>`;})})
     .then(response=>{
         arr[0].map((item,index)=>{
        slider1.innerHTML+=`<div class="swiper-slide">${index===0?`The Razorite`:`0${index}`}</div>`;}) })
@@ -76,6 +76,7 @@ document.addEventListener('DOMContentLoaded',()=>{
                 .then(response => response.json())
                 .then(response=>arr.push(response.data))
                 .then(response=>{
+                
                  arr[count/3].map(item=>{
                 slider.innerHTML+=`<div class="swiper-slide" >
                                     <img src=${item.imgUrl} alt=''/>
@@ -98,6 +99,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 
     nextBtn.addEventListener('click',function(){
+        
         count++;
         tohtml(count)
         if(((count+1)%3 ==0 && !firstLoad) || ((count+1)%3 ==0 && !secondLoad)){
@@ -107,7 +109,7 @@ document.addEventListener('DOMContentLoaded',()=>{
             if((count+1)%3 == 0 && (count+1)/3 == 2){
                 secondLoad = true
             }
-            askAPI(count+1)
+            setTimeout(()=>askAPI(count+1),1500)
         }
     })
 
