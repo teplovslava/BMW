@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         observer: true,
         observeParents: true,
         speed: 1500,
+        allowTouchMove: false,
 
         
     onSlideChangeEnd: function(swiper){ 
